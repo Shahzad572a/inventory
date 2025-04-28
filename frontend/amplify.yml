@@ -5,16 +5,15 @@ applications:
       phases:
         preBuild:
           commands:
-            - cd frontend
             - npm install
         build:
           commands:
             - npm run build && npm run export
       artifacts:
-        baseDirectory: frontend/out
+        baseDirectory: out
         files:
           - '**/*'
       cache:
         paths:
-          - 'frontend/node_modules/**/*'
-          - 'frontend/.next/**/*'
+          - 'node_modules/**/*'
+          - '.next/**/*'
