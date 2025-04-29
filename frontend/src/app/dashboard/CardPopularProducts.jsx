@@ -31,7 +31,7 @@ const CardPopularProducts = () => {
                     // src={`/product${
                     //   Math.floor(Math.random() * 3) + 1
                     // }.png`}
-                    src='/public/next.svg'
+                    src='/next.svg'
                     alt={product.name}
                     width={48}
                     height={48}
